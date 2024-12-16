@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 20px;
+}
+.container {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.tooltip-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  top: 110%;
+  left: 70px;
+  border-radius: 5px 20px 5px 20px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  max-width: max-content;
+
+  border: none;
+  border: 2px dotted rgb(193, 193, 193);
+  background-color: transparent;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+}
+.button:hover .tooltip-text {
+  display: block;
+}
+.more {
+  background-color: rgb(21, 21, 142);
+  border: none;
+  padding: 2px 18px;
+  border-radius: 50px;
+  color: rgb(227, 227, 227);
+  font-size: 25px;
+  max-width: max-content;
+}
+.tooltip-more {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  top: 110%;
+  left: 70px;
+  background-color: rgb(44, 44, 44);
+  font-size: 18px;
+  padding: 25px;
+  border-radius: 10px;
+}
+.tooltip-more a {
+  color: black;
+  text-decoration: none;
+  background: rgb(201, 201, 201);
+  padding: 5px 10px;
+  width: max-content;
+  border-radius: 5px;
+}
+.more:hover .tooltip-more {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
